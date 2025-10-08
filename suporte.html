@@ -222,31 +222,5 @@
     </main>
   </div>
 
-  <script>
-    // Simple client-side helper to jump to sections via search keywords
-    function locate(){
-      const q = document.getElementById('q').value.trim().toLowerCase();
-      if(!q) return;
-      const map = {
-        'senha':'conta','login':'conta','entrar':'conta','invasao':'conta','invadida':'conta',
-        'pagamento':'pagamentos','compra':'pagamentos','cobrança':'pagamentos','pedido':'pagamentos',
-        'erro':'jogos','trava':'jogos','aberto':'jogos','codigo':'jogos',
-        'reembolso':'reembolso','devolucao':'reembolso','troca':'reembolso',
-        'comunidade':'comunidade','discord':'comunidade','forum':'comunidade',
-        'suporte':'contato','contato':'contato','ajuda':'contato'
-      };
-      for(const key in map){
-        if(q.includes(key)){
-          location.hash = '#'+map[key];
-          document.querySelectorAll('nav a').forEach(a=>a.classList.remove('active'));
-          document.querySelector('nav a[href="#'+map[key]+'"]').classList.add('active');
-          return;
-        }
-      }
-      // fallback: show top of page
-      location.hash = '#content';
-      alert('Não encontramos uma correspondência exata. Tente outras palavras-chave.');
-    }
-  </script>
 </body>
 </html>
