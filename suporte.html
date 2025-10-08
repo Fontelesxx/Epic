@@ -1,134 +1,31 @@
 <!doctype html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="Suporte.css">
   <title>Guia de Suporte — Epic Games (Versão Diferente)</title>
-  <style>
-    :root{
-      --bg:#0f1724;
-      --card:#0b1220;
-      --muted:#9aa4b2;
-      --accent:#6c8cff;
-      --glass: rgba(255,255,255,0.03);
-      --radius:14px;
-      --maxw:1100px;
-      --gap:18px;
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      color: #e6eef8;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      background: linear-gradient(180deg,#071227 0%, #071021 60%);
-      min-height:100vh;
-      display:flex;
-      align-items:flex-start;
-      justify-content:center;
-      padding:40px 18px;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-    }
-    .wrap{
-      width:100%;
-      max-width:var(--maxw);
-      display:grid;
-      grid-template-columns: 340px 1fr;
-      gap:var(--gap);
-      align-items:start;
-    }
-    header.site-header{
-      grid-column:1/-1;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:12px;
-      margin-bottom:4px;
-    }
-    .brand{
-      display:flex;align-items:center;gap:12px;
-    }
-    .logo{
-      width:56px;height:56px;border-radius:12px;
-      background:linear-gradient(135deg,var(--accent), #3b7bfc);
-      display:flex;align-items:center;justify-content:center;
-      font-weight:700;color:white;font-size:20px;
-      box-shadow:0 6px 18px rgba(45,74,255,0.12), inset 0 -6px 18px rgba(255,255,255,0.03);
-    }
-    h1{font-size:18px;margin:0}
-    p.lead{margin:0;color:var(--muted);font-size:13px}
-    /* SIDEBAR */
-    aside.sidebar{
-      background:var(--card);
-      padding:18px;
-      border-radius:var(--radius);
-      min-height:320px;
-      position:sticky;top:24px;
-      box-shadow: 0 6px 30px rgba(2,6,23,0.6);
-    }
-    .search{
-      display:flex;gap:8px;margin-bottom:12px;
-    }
-    .search input{
-      flex:1;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);
-      background:var(--glass);color:inherit;font-size:14px;
-    }
-    .search button{
-      padding:0 12px;border-radius:10px;border:0;background:linear-gradient(180deg,var(--accent),#3b7bfc);
-      color:#fff;font-weight:600;cursor:pointer;
-    }
-    nav .nav-group{margin-top:8px}
-    nav a{
-      display:block;padding:10px 12px;border-radius:10px;color:var(--muted);text-decoration:none;margin:6px 0;font-size:14px;
-    }
-    nav a.active{background:linear-gradient(90deg,var(--accent),#3b7bfc);color:#061129; font-weight:700}
-    /* CONTENT */
-    main.content{
-      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      padding:20px;border-radius:var(--radius);min-height:400px;box-shadow:0 8px 40px rgba(2,6,23,0.6);
-    }
-    .hero{
-      display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px;
-    }
-    .hero .intro{max-width:720px}
-    .kpi{
-      display:flex;gap:10px;align-items:center;
-    }
-    .kpi div{background:var(--glass);padding:8px 12px;border-radius:10px;font-size:13px;color:var(--muted)}
-    section.card{
-      background: rgba(255,255,255,0.02); padding:16px;border-radius:12px;margin-bottom:14px;border:1px solid rgba(255,255,255,0.02);
-    }
-    h2{margin:0 0 8px 0;font-size:16px}
-    ul.faq{list-style:none;margin:0;padding:0}
-    ul.faq li{padding:10px;border-radius:8px;background:transparent;margin-bottom:8px;border:1px dashed rgba(255,255,255,0.02)}
-    .cta{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#3b7bfc);color:#061129;font-weight:700;text-decoration:none}
-    footer{margin-top:12px;color:var(--muted);font-size:13px;text-align:center}
-    /* responsive */
-    @media (max-width:880px){
-      .wrap{grid-template-columns:1fr; padding-bottom:40px}
-      aside.sidebar{position:relative;top:0}
-      header.site-header{flex-direction:column;align-items:flex-start;gap:8px}
-    }
-  </style>
 </head>
+
 <body>
   <div class="wrap" role="main">
     <header class="site-header" aria-label="Cabeçalho da central de suporte">
-      <div class="brand">
-        <div class="logo" aria-hidden="true">EG</div>
+      <div class="Container">
+        <div class="logo">EG</div>
         <div>
           <h1>Central de Suporte — Epic Games</h1>
           <p class="lead">Ajuda rápida para contas, compras e jogos. Resolva sua dúvida em poucos passos.</p>
         </div>
       </div>
-      <div class="kpi" aria-hidden="true">
+      <div class="Respostas">
         <div>✅ Resposta média: 24h</div>
         <div>📞 Atendimento 24/7</div>
       </div>
     </header>
 
     <aside class="sidebar" aria-label="Navegação de suporte">
-      <form class="search" onsubmit="event.preventDefault(); locate();">
+      <form class="search">
         <input id="q" type="search" aria-label="Pesquisar suporte" placeholder="Procure: ex. não consigo entrar" />
         <button type="submit" title="Pesquisar">Buscar</button>
       </form>
@@ -149,7 +46,8 @@
       <div class="hero">
         <div class="intro">
           <h2>Resolva rápido — solução passo a passo</h2>
-          <p class="lead">Escolha uma categoria ao lado ou use a busca para encontrar guias, tutoriais e FAQs detalhados.</p>
+          <p class="lead">Escolha uma categoria ao lado ou use a busca para encontrar guias, tutoriais e FAQs
+            detalhados.</p>
         </div>
         <div style="text-align:right">
           <a class="cta" href="#contato">Enviar solicitação</a>
@@ -159,14 +57,16 @@
       <section id="conta" class="card" aria-labelledby="conta-title">
         <h2 id="conta-title">👤 Conta & Segurança</h2>
         <p class="lead">Problemas com login, senha ou segurança da conta? Aqui estão as soluções mais rápidas.</p>
-        <ul class="faq" role="list">
-          <li><strong>Esqueci minha senha</strong><br>Vá para <em>Redefinir senha</em> e siga as instruções. Verifique a caixa de spam.</li>
-          <li><strong>Não consigo entrar</strong><br>Confirme o e-mail cadastrado e desative CAPS LOCK. Tente redefinir a senha.</li>
+        <ul class="faq">
+          <li><strong>Esqueci minha senha</strong><br>Vá para <em>Redefinir senha</em> e siga as instruções. Verifique a
+            caixa de spam.</li>
+          <li><strong>Não consigo entrar</strong><br>Confirme o e-mail cadastrado e desative CAPS LOCK. Tente redefinir
+            a senha.</li>
           <li><strong>Conta comprometida</strong><br>Ative 2FA, altere senha e envie ticket urgente para o suporte.</li>
         </ul>
       </section>
 
-      <section id="pagamentos" class="card" aria-labelledby="pag-title">
+      <section class="card">
         <h2 id="pag-title">💳 Pagamentos & Compras</h2>
         <p class="lead">Cobrança duplicada? Pedido não apareceu no jogo? Siga estes passos:</p>
         <ol>
@@ -209,18 +109,20 @@
       </section>
 
       <section id="contato" class="card" aria-labelledby="contact-title">
-        <h2 id="contact-title">📩 Fale Conosco</h2>
+        <h2 id="contato-title">📩 Fale Conosco</h2>
         <p class="lead">Se nenhuma solução resolveu, envie uma solicitação.</p>
-        <p><strong>Acesse:</strong> <a href="https://www.epicgames.com/help" target="_blank" rel="noopener noreferrer">help.epicgames.com</a></p>
+        <p><strong>Acesse:</strong> <a href="https://www.epicgames.com/help">help.epicgames.com</a></p>
         <p><strong>Tempo médio de resposta:</strong> 24 horas</p>
-        <p style="margin-top:12px"><a class="cta" href="https://www.epicgames.com/help" target="_blank" rel="noopener">Enviar solicitação</a></p>
+        <p style="margin-top:12px"><a class="cta" href="https://www.epicgames.com/help" >Enviar solicitação</a></p>
       </section>
 
       <footer class="card" aria-hidden="false">
-        <small>© 2025 Epic Games, Inc. – Versão do modelo diferente • Política de Privacidade • Termos de Serviço</small>
+        <small>© 2025 Epic Games, Inc. – Versão do modelo diferente • Política de Privacidade • Termos de
+          Serviço</small>
       </footer>
     </main>
   </div>
 
 </body>
+
 </html>
