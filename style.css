@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #121212;
+    color: #fff; 
+}
+.imagem_principal{
+    background-color: #121212;
+    border: none;
+    padding: 10px 30px;
+}
+.imagem_principal-img{
+    width: 50px;
+}
+.imagem_principal-img:hover{
+    cursor: pointer;
+}
+.imagem_principal-img:active{
+    transform: scale(0.98);
+}
