@@ -1,0 +1,89 @@
+body {
+  background-color: #0d1117;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#caixa {
+  background-color: #161b22;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: left;
+  height: 300px;
+}
+
+#voltar {
+  color: #aaa;
+  text-decoration: none;
+}
+
+
+#voltar:hover{
+    text-decoration: underline;
+}
+
+
+h1 {
+  margin-top: 24px;
+  font-size: 24px;
+}
+
+#descricao {
+  color: #bbb;
+}
+
+
+#email {
+  width: 380px;
+  padding: 10px;
+  border: 1px solid #646464;
+  border-radius: 5px;
+  background-color: #0d1117;
+  color: white;
+  margin-top: 10px;
+}
+
+#email:active{
+    background-color: #161b22;
+}
+
+
+#continuar {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color:#0078f2;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+
+#continuar:hover{
+    background-color: #3699fc;
+    cursor: pointer;
+}
+
+#continuar:active{
+    transform: scale(0.98);
+}
+
+
+#privacidade {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: #0078f2;
+  text-decoration: none;
+}
+#privacidade:hover {
+    text-decoration: underline;
+}
