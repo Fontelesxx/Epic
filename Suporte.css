@@ -23,7 +23,7 @@
    display: inline-block;
    padding: 10px 14px;
    border-radius: 10px;
-   background: linear-gradient(90deg, var(--accent), #3b7bfc);
+   background: linear-gradient(#3b7bfc);
    color: #061129;
    font-weight: 700;
    text-decoration: none
@@ -106,7 +106,8 @@
  }
 
  .Respostas button:active {
-
+  background-color: rgba(255, 255, 255, 0.137);
+  color: white;
  }
  .search {
   display: flex;
@@ -135,13 +136,14 @@
   color: #fff;
 }
 aside.sidebar {
-  background-color: #001847;
+  background-color: rgb(0, 22, 65);
   padding: 18px;
   border-radius: 10px;
   min-height: 320px;
   top: 24px;
   box-shadow: 0 6px 30px rgba(2, 6, 23, 0.6);
   border-color: #ffffff;
+
 }
 nav a {
   display: block;
@@ -159,4 +161,50 @@ nav a.active {
 }
 nav .nav-group {
   margin-top: 8px;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 20px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+.cta {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: linear-gradient( #3b7bfc);
+  color: #ffffffb2;
+  font-weight: 700;
+  text-decoration: none;
+}
+p.lead {
+  margin: 0;
+  font-size: 15px;
+}
+main.content {
+  margin: 50px;
+  background: linear-gradient( rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+  padding: 20px 20px 20px 20px;
+  border-radius: 10px;
+  min-height: 400px;
+  box-shadow: 0 8px 40px rgba(2, 6, 23, 0.6);
+  background-color: rgb(0, 22, 65);
+}
+section.card {
+  background: linear-gradient( #ffffffc0);
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.02);
+}
+.lead{
+  color: #0f5bcee3;
 }
