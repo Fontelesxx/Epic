@@ -1,21 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="Img/Icon.epic.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="Img/Epic_Games_logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <title>Epic Games</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+  <title>Loja — Modelo</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <button class="imagem_principal"><img src="./Img/Epic_Games_logo.png" alt="" class="imagem_principal-img"></button> 
-            <a href="#">STORE</a>
-            <a href="suporte.html">Suporte</a>  
-            <a href="login.html">Login</a>
-        </nav>   
-    </header>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">EPIC</div>
+
+      <nav class="main-nav">
+        <a href="index.html">STORE</a>
+        <a href="suporte.html">Suporte</a>
+      </nav>
+
+      <div class="actions">
+        <button class="btn ghost">Entrar</button>
+        <button class="btn primary">Download</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="search-row">
+      <div class="search">
+        <input type="search" placeholder="Pesquisar loja" />
+      </div>
+
+      <div class="nav-links">
+        <a href="#">Descobrir</a>
+        <a href="#">Navegar</a>
+        <a href="#">Novidades</a>
+      </div>
+    </div>
+
+    <section class="content">
+      <article class="hero-card">
+        <div class="hero-image"></div>
+        <div class="hero-content">
+          <h2>BATTLEFIELD 6</h2>
+          <img src="Img/batlle.png" alt="6" width="800">
+          <p class="tag">COMBATE DE ALTA INTENSIDADE</p>
+          <p class="desc">
+            A espera acabou, soldado. Baixe agora e viva o ápice da experiência de guerra hoje mesmo.
+          </p>
+          <div class="hero-cta">
+            <span class="price">R$ 299</span>
+            <button class="btn primary">Compre agora</button>
+            <a class="wishlist" href="#">Para a Lista de Desejos</a>
+          </div>
+        </div>
+      </article>
+
+      <aside class="sidebar">
+        <ul class="game-list">
+          <li><span class="thumb"> <img src="Img/battle(2).png" alt="6" width="30"></span>Battlefield 6</li>
+          <li><span class="thumb"> </span>Zenless Zone Zero</li>
+          <li><span class="thumb"> </span>Borderlands 4</li>
+          <li><span class="thumb"> </span>Bloodlines 2</li>
+          <li><span class="thumb"> </span>GTA Online</li>
+          <li><span class="thumb"> </span>Honkai: Star Rail</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="discover">
+      <h3>Descubra algo novo</h3>
+      <div class="cards-row">
+        <div class="small-card">Sugestão 1</div>
+        <div class="small-card">Sugestão 2</div>
+        <div class="small-card">Sugestão 3</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Modelo — Exemplo de layout</p>
+  </footer>
 </body>
 </html>

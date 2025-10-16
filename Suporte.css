@@ -6,7 +6,7 @@
 
  body {
    margin: 0;
-   background: linear-gradient(rgb(0, 0, 0), #152749);
+   background: linear-gradient(rgba(8, 8, 8, 0.897), #152749);
    min-height: 100vh;
    display: flex;
    align-items: flex-start;
