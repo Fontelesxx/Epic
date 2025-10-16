@@ -1,0 +1,110 @@
+/* Reset simples */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Tipografia e cores (sem :root) */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background-color: #111827;
+  color: #ffffff;
+  line-height: 1.6;
+  padding-bottom: 3rem;
+}
+
+
+#voltar{
+    text-decoration: none;
+    color: white;
+}
+
+#voltar:hover{
+    text-decoration: underline;
+
+}
+/* Containers */
+.container {
+  width: clamp(320px, 92%, 980px);
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+/* Header */
+.site-header {
+  background: linear-gradient(90deg, rgba(11,92,255,0.06), rgba(11,92,255,0.02));
+  border-bottom: 1px solid rgba(17,24,39,0.06);
+  padding: 0.9rem 0;
+}
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand-block .brand {
+  color: #0b5cff;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.brand-block .subtitle {
+  color: #6b7280;
+  margin-top: 0.25rem;
+  font-size: 0.95rem;
+}
+.meta { color: #6b7280; font-size: 0.95rem; }
+
+/* Main policy card */
+.main { margin-top: 1.25rem; }
+.policy {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 24px rgba(15,23,42,0.04);
+}
+.policy h2 {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+.policy h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.45rem;
+  font-size: 1.02rem;
+  color: #111827;
+}
+.policy p, .policy li {
+  color: #111827;
+  font-size: 0.98rem;
+}
+.policy ul {
+  margin-left: 1.125rem;
+  margin-top: 0.5rem;
+  list-style: disc;
+}
+.policy a {
+  color: #0b5cff;
+  text-decoration: none;
+}
+.policy a:hover { text-decoration: underline; }
+
+/* Footer inside policy */
+.policy-footer {
+  margin-top: 1.25rem;
+  border-top: 1px dashed rgba(17,24,39,0.04);
+  padding-top: 0.75rem;
+  color: #6b7280;
+  font-size: 0.92rem;
+}
+
+/* Page footer */
+.site-footer {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.9rem;
+  background: transparent;
+}
+
+/* Responsivo */
+@media (max-width: 640px) {
+  .header-inner { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+  .policy { padding: 1rem; border-radius: 10px; }
+  .brand-block .brand { font-size: 1.2rem; }
+}
