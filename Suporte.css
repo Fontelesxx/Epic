@@ -208,3 +208,6 @@ section.card {
 .lead{
   color: #0f5bcee3;
 }
+.active{
+  color: #fff;
+}
