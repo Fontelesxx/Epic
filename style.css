@@ -151,7 +151,10 @@ body {
     letter-spacing: 1px;
     margin-bottom: 8px;
 }
-
+.wishlist{
+    margin-top: 5px;
+    background-color: transparent;
+}
 .tag {
     font-weight: 700;
     opacity: 0.9;
@@ -192,21 +195,23 @@ body {
     padding: 6px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 35px;
 }
 
 .game-list li {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 8px;
+    padding: 20px;
+    padding-bottom: 30px;
+    padding-top: 10px;
     border-radius: 8px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.00));
     color: #dfeff7;
     font-weight: 600;
     cursor: pointer;
+    
 }
-
 .game-list li .thumb {
     width: 44px;
     height: 44px;
@@ -226,22 +231,44 @@ body {
 }
 
 .cards-row {
-    display: flex;
-    gap: 12px;
+   display: grid
+;
+    gap: 30px;
+    grid-auto-flow: column;
+    grid-auto-columns: 327px;
+    justify-content: center;
+    padding-right: 0px;
+    /*padding-left: 100px*/
 }
 
 .small-card {
-    flex: 1;
     min-height: 84px;
     border-radius: 10px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #cfe9f5;
     font-weight: 700;
 }
-
+.capa_descobrir{
+    padding: 10px;
+    margin-left: 15px;
+    padding-bottom: 0px;
+}
+.tipojogo_descubra{
+    text-align: center;
+    padding-bottom: 10px;
+    color: gray;
+}
+.nomejogo_descubra{
+    text-align: center;
+}
+.comprarjogo_descubra{
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: 800;
+    font-size: 18px;
+    padding: 6px 10px;
+    border-radius: 8px;
+}
 /* Footer */
 .footer {
     margin-top: 40px;
