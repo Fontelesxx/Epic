@@ -28,6 +28,9 @@ body {
     padding: 14px 18px;
 }
 
+
+
+
 #epic{
     height: 50px;
 }
@@ -126,6 +129,8 @@ body {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
 }
 
+
+
 .hero-image {
     position: absolute;
     inset: 0;
@@ -198,6 +203,15 @@ body {
     gap: 35px;
 }
 
+h3{
+  margin-bottom: 15px;
+}
+
+
+section{
+    margin-top: 30px;
+}
+
 .game-list li {
     display: flex;
     align-items: center;
@@ -231,8 +245,7 @@ body {
 }
 
 .cards-row {
-   display: grid
-;
+   display: grid;
     gap: 30px;
     grid-auto-flow: column;
     grid-auto-columns: 327px;
@@ -252,6 +265,9 @@ body {
     padding: 10px;
     margin-left: 15px;
     padding-bottom: 0px;
+    height: 250px;
+    width: 300px;
+    
 }
 .tipojogo_descubra{
     text-align: center;
@@ -278,49 +294,138 @@ body {
     font-size: 13px;
 }
 
-/* Responsividade */
-@media (max-width: 900px) {
-    .topbar-inner {
-        padding: 12px;
-    }
+/* Responsividade para tablets */
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0 12px;
+  }
 
-    .content {
-        flex-direction: column;
-    }
+  .topbar-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
 
-    .sidebar {
-        width: 100%;
-        order: 2;
-    }
+  .content {
+    flex-direction: column;
+  }
 
-    .hero-card {
-        min-height: 320px;
-        order: 1;
-    }
+  .sidebar {
+    width: 100%;
+    order: 2;
+  }
 
-    .search input[type="search"] {
-        width: 220px;
-    }
+  .hero-card {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .hero-content img {
+    width: 100%;
+    height: auto;
+  }
+
+  .search-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .search input[type="search"] {
+    width: 100%;
+  }
+
+  .cards-row {
+    grid-auto-columns: 85%;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .small-card {
+    scroll-snap-align: start;
+  }
+
+  .game-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .game-list li {
+    flex: 1 1 calc(50% - 12px);
+  }
 }
 
-@media (max-width: 520px) {
-    .brand {
-        display: none;
-    }
+/* Responsividade para celulares */
+@media screen and (max-width: 768px) {
+  .topbar-inner {
+    padding: 10px 12px;
+  }
 
-    .main-nav {
-        display: none;
-    }
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
 
-    .search input[type="search"] {
-        width: 160px;
-    }
+  .actions {
+    width: 100%;
+    justify-content: space-between;
+  }
 
-    .hero-content h2 {
-        font-size: 26px;
-    }
+  .btn.primary,
+  .btn.ghost {
+    width: 100%;
+  }
 
-    .sidebar {
-        display: none;
-    }
+  .hero-content h2 {
+    font-size: 28px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .cards-row {
+    grid-auto-columns: 90%;
+  }
+
+  .small-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .capa_descobrir {
+    margin-left: 0;
+    padding: 8px 0 0 0;
+  }
+
+  .comprarjogo_descubra button {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .hero-content {
+    padding: 16px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+
+  .search input[type="search"] {
+    width: 100%;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }
